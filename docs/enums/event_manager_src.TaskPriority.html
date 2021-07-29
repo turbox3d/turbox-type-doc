@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TaskPriority | turbox</title>
+	<meta name="description" content="Documentation for turbox">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">turbox</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">turbox</a>
+				</li>
+				<li>
+					<a href="../modules/event_manager_src.html">event-manager/src</a>
+				</li>
+				<li>
+					<a href="event_manager_src.TaskPriority.html">TaskPriority</a>
+				</li>
+			</ul>
+			<h1>Enumeration TaskPriority</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>任务优先级。数据越小，优先级越高</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-external">
+							<h3>Enumeration members</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="event_manager_src.TaskPriority.html#RenderReact" class="tsd-kind-icon">Render<wbr>React</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="event_manager_src.TaskPriority.html#RenderScene" class="tsd-kind-icon">Render<wbr>Scene</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="event_manager_src.TaskPriority.html#UpdateState" class="tsd-kind-icon">Update<wbr>State</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external"><a href="event_manager_src.TaskPriority.html#UserAction" class="tsd-kind-icon">User<wbr>Action</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-external">
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="RenderReact" class="tsd-anchor"></a>
+					<h3>Render<wbr>React</h3>
+					<div class="tsd-signature tsd-kind-icon">Render<wbr>React<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in command-manager/node_modules/@ali/shared/typings/rafTask.d.ts:16</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>更新 React 组件</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="RenderScene" class="tsd-anchor"></a>
+					<h3>Render<wbr>Scene</h3>
+					<div class="tsd-signature tsd-kind-icon">Render<wbr>Scene<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = -1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in command-manager/node_modules/@ali/shared/typings/rafTask.d.ts:22</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>更新场景视图</p>
+						</div>
+						<p>暂定高优先级，因为基于之后场景组件化的机制，这一帧绘制的应该是上一帧的结果</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="UpdateState" class="tsd-anchor"></a>
+					<h3>Update<wbr>State</h3>
+					<div class="tsd-signature tsd-kind-icon">Update<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in command-manager/node_modules/@ali/shared/typings/rafTask.d.ts:12</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>更新领域数据</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+					<a name="UserAction" class="tsd-anchor"></a>
+					<h3>User<wbr>Action</h3>
+					<div class="tsd-signature tsd-kind-icon">User<wbr>Action<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in command-manager/node_modules/@ali/shared/typings/rafTask.d.ts:8</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>用户行为（比如：各种交互行为）</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/command_manager_src.html">command-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/design_engine_src.html">design-<wbr>engine/src</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/event_manager_src.html">event-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_pixi_src.html">graphic-<wbr>component-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_three_src.html">graphic-<wbr>component-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_pixi_src.html">graphic-<wbr>view-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_three_src.html">graphic-<wbr>view-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_src.html">graphic-<wbr>view/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/math_src.html">math/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reactivity_react_src.html">reactivity-<wbr>react/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reactivity_src.html">reactivity/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/shared_src.html">shared/src</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="event_manager_src.CoordinateType.html" class="tsd-kind-icon">Coordinate<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="event_manager_src.InteractiveEvent.html" class="tsd-kind-icon">Interactive<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="event_manager_src.Key.html" class="tsd-kind-icon">Key</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum tsd-parent-kind-module tsd-is-external">
+						<a href="event_manager_src.TaskPriority.html" class="tsd-kind-icon">Task<wbr>Priority</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="event_manager_src.TaskPriority.html#RenderReact" class="tsd-kind-icon">Render<wbr>React</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="event_manager_src.TaskPriority.html#RenderScene" class="tsd-kind-icon">Render<wbr>Scene</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="event_manager_src.TaskPriority.html#UpdateState" class="tsd-kind-icon">Update<wbr>State</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum tsd-is-external">
+								<a href="event_manager_src.TaskPriority.html#UserAction" class="tsd-kind-icon">User<wbr>Action</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/event_manager_src.CoordinateController.html" class="tsd-kind-icon">Coordinate<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/event_manager_src.HotKeyController.html" class="tsd-kind-icon">Hot<wbr>Key<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../classes/event_manager_src.InteractiveController.html" class="tsd-kind-icon">Interactive<wbr>Controller</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/event_manager_src.InteractiveListener.html" class="tsd-kind-icon">Interactive<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/event_manager_src.SceneMouseEvent.html" class="tsd-kind-icon">Scene<wbr>Mouse<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/event_manager_src.IHotKeyConfig.html" class="tsd-kind-icon">IHot<wbr>Key<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/event_manager_src.IHotKeyData.html" class="tsd-kind-icon">IHot<wbr>Key<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/event_manager_src.ITransformPos.html" class="tsd-kind-icon">ITransform<wbr>Pos</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/event_manager_src.IViewEntity.html" class="tsd-kind-icon">IView<wbr>Entity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/event_manager_src.InteractiveConfig.html" class="tsd-kind-icon">Interactive<wbr>Config</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/event_manager_src.html#InteractiveType" class="tsd-kind-icon">Interactive<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/event_manager_src.html#HotKey" class="tsd-kind-icon">Hot<wbr>Key</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter tsd-is-external">
+						<a href="../modules/event_manager_src.html#throttleInAFrame" class="tsd-kind-icon">throttle<wbr>InAFrame</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

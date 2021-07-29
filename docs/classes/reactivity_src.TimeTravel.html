@@ -1,0 +1,776 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TimeTravel | turbox</title>
+	<meta name="description" content="Documentation for turbox">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">turbox</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">turbox</a>
+				</li>
+				<li>
+					<a href="../modules/reactivity_src.html">reactivity/src</a>
+				</li>
+				<li>
+					<a href="reactivity_src.TimeTravel.html">TimeTravel</a>
+				</li>
+			</ul>
+			<h1>Class TimeTravel</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>collect prop diff history record</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TimeTravel</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#currentHistory" class="tsd-kind-icon">current<wbr>History</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#cursor" class="tsd-kind-icon">cursor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#transactionHistories" class="tsd-kind-icon">transaction<wbr>Histories</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#currentTimeTravel" class="tsd-kind-icon">current<wbr>Time<wbr>Travel</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#redoable" class="tsd-kind-icon">redoable</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#undoable" class="tsd-kind-icon">undoable</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#redoable-1" class="tsd-kind-icon">redoable</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#undoable-1" class="tsd-kind-icon">undoable</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#clear" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#onChange" class="tsd-kind-icon">on<wbr>Change</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#redo" class="tsd-kind-icon">redo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="reactivity_src.TimeTravel.html#undo" class="tsd-kind-icon">undo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#clear-1" class="tsd-kind-icon">clear</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#create" class="tsd-kind-icon">create</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#pause" class="tsd-kind-icon">pause</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#redo-1" class="tsd-kind-icon">redo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#redoHandler" class="tsd-kind-icon">redo<wbr>Handler</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#resume" class="tsd-kind-icon">resume</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#switch" class="tsd-kind-icon">switch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#undo-1" class="tsd-kind-icon">undo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="reactivity_src.TimeTravel.html#undoHandler" class="tsd-kind-icon">undo<wbr>Handler</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Time<wbr>Travel<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="currentHistory" class="tsd-anchor"></a>
+					<h3>current<wbr>History</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>History<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">History</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in reactivity/src/core/time-travel.ts:142</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="cursor" class="tsd-anchor"></a>
+					<h3>cursor</h3>
+					<div class="tsd-signature tsd-kind-icon">cursor<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = -1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in reactivity/src/core/time-travel.ts:144</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="transactionHistories" class="tsd-anchor"></a>
+					<h3>transaction<wbr>Histories</h3>
+					<div class="tsd-signature tsd-kind-icon">transaction<wbr>Histories<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HistoryNode</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in reactivity/src/core/time-travel.ts:143</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="currentTimeTravel" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> current<wbr>Time<wbr>Travel</h3>
+					<div class="tsd-signature tsd-kind-icon">current<wbr>Time<wbr>Travel<span class="tsd-signature-symbol">:</span> <a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in reactivity/src/core/time-travel.ts:36</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="redoable" class="tsd-anchor"></a>
+					<h3>redoable</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> redoable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:138</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="undoable" class="tsd-anchor"></a>
+					<h3>undoable</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> undoable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:134</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+					<a name="redoable-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> redoable</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> redoable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:72</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+					<a name="undoable-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> undoable</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> undoable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:68</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="clear" class="tsd-anchor"></a>
+					<h3>clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:222</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onChange" class="tsd-anchor"></a>
+					<h3>on<wbr>Change</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Change<span class="tsd-signature-symbol">(</span>undoable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, redoable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HistoryOperationType</span>, action<span class="tsd-signature-symbol">?: </span><a href="reactivity_src.Action.html" class="tsd-signature-type" data-tsd-kind="Class">Action</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:146</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>undoable: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>redoable: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">HistoryOperationType</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> action: <a href="reactivity_src.Action.html" class="tsd-signature-type" data-tsd-kind="Class">Action</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="redo" class="tsd-anchor"></a>
+					<h3>redo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">redo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:190</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>support multiple steps
+										apply the next history status</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="undo" class="tsd-anchor"></a>
+					<h3>undo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">undo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:154</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>support multiple steps
+										revert to the previous history status</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="clear-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clear</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clear<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:64</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="create" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> create</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:43</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="pause" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> pause</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">pause<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:48</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="redo-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> redo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">redo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:60</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="redoHandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> redo<wbr>Handler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">redo<wbr>Handler<span class="tsd-signature-symbol">(</span>history<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">History</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:107</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>history: <span class="tsd-signature-type">History</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="resume" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> resume</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">resume<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:52</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="switch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> switch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">switch<span class="tsd-signature-symbol">(</span>instance<span class="tsd-signature-symbol">: </span><a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:38</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>instance: <a href="reactivity_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="undo-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> undo</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">undo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:56</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="undoHandler" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> undo<wbr>Handler</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">undo<wbr>Handler<span class="tsd-signature-symbol">(</span>history<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">History</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in reactivity/src/core/time-travel.ts:76</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>history: <span class="tsd-signature-type">History</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/command_manager_src.html">command-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/design_engine_src.html">design-<wbr>engine/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/event_manager_src.html">event-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_pixi_src.html">graphic-<wbr>component-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_three_src.html">graphic-<wbr>component-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_pixi_src.html">graphic-<wbr>view-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_three_src.html">graphic-<wbr>view-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_view_src.html">graphic-<wbr>view/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/math_src.html">math/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reactivity_react_src.html">reactivity-<wbr>react/src</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/reactivity_src.html">reactivity/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/shared_src.html">shared/src</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/reactivity_src.ActionStatus.html" class="tsd-kind-icon">Action<wbr>Status</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/reactivity_src.EEventName.html" class="tsd-kind-icon">EEvent<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="reactivity_src.Action.html" class="tsd-kind-icon">Action</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="reactivity_src.Domain.html" class="tsd-kind-icon">Domain</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="reactivity_src.Reaction.html" class="tsd-kind-icon">Reaction</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="reactivity_src.TimeTravel.html" class="tsd-kind-icon">Time<wbr>Travel</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#currentHistory" class="tsd-kind-icon">current<wbr>History</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#cursor" class="tsd-kind-icon">cursor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#transactionHistories" class="tsd-kind-icon">transaction<wbr>Histories</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#currentTimeTravel" class="tsd-kind-icon">current<wbr>Time<wbr>Travel</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#redoable" class="tsd-kind-icon">redoable</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#undoable" class="tsd-kind-icon">undoable</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#redoable-1" class="tsd-kind-icon">redoable</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#undoable-1" class="tsd-kind-icon">undoable</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#clear" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#onChange" class="tsd-kind-icon">on<wbr>Change</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#redo" class="tsd-kind-icon">redo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="reactivity_src.TimeTravel.html#undo" class="tsd-kind-icon">undo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#clear-1" class="tsd-kind-icon">clear</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#create" class="tsd-kind-icon">create</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#pause" class="tsd-kind-icon">pause</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#redo-1" class="tsd-kind-icon">redo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#redoHandler" class="tsd-kind-icon">redo<wbr>Handler</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#resume" class="tsd-kind-icon">resume</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#switch" class="tsd-kind-icon">switch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#undo-1" class="tsd-kind-icon">undo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="reactivity_src.TimeTravel.html#undoHandler" class="tsd-kind-icon">undo<wbr>Handler</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/reactivity_src.AfterStoreChangeEvent.html" class="tsd-kind-icon">After<wbr>Store<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/reactivity_src.BeforeStoreChangeEvent.html" class="tsd-kind-icon">Before<wbr>Store<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/reactivity_src.MaterialCallStackChangeEvent.html" class="tsd-kind-icon">Material<wbr>Call<wbr>Stack<wbr>Change<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="../interfaces/reactivity_src.SetPropertyEvent.html" class="tsd-kind-icon">Set<wbr>Property<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#REACTIVE_COMPONENT_NAME" class="tsd-kind-icon">REACTIVE_<wbr>COMPONENT_<wbr>NAME</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#UNSUBSCRIBE_HANDLER" class="tsd-kind-icon">UNSUBSCRIBE_<wbr>HANDLER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#depCollector" class="tsd-kind-icon">dep<wbr>Collector</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#emitter" class="tsd-kind-icon">emitter</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#store" class="tsd-kind-icon">store</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#action" class="tsd-kind-icon">action</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/reactivity_src.html#computed" class="tsd-kind-icon">computed</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#config" class="tsd-kind-icon">config</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/reactivity_src.html#createDomain" class="tsd-kind-icon">create<wbr>Domain</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#init" class="tsd-kind-icon">init</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#mutation" class="tsd-kind-icon">mutation</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#reactive" class="tsd-kind-icon">reactive</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="../modules/reactivity_src.html#reactor" class="tsd-kind-icon">reactor</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#registerExternalBatchUpdate" class="tsd-kind-icon">register<wbr>External<wbr>Batch<wbr>Update</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/reactivity_src.html#use" class="tsd-kind-icon">use</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

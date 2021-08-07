@@ -61,7 +61,7 @@
 					<a href="graphic_view_src.BaseScene.html">BaseScene</a>
 				</li>
 			</ul>
-			<h1>Class BaseScene&lt;ApplicationContext, Container, DisplayObject, Viewport&gt;</h1>
+			<h1>Class BaseScene&lt;ApplicationContext, Scene, Camera, Container, DisplayObject, Viewport&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -73,6 +73,12 @@
 				<ul class="tsd-type-parameters">
 					<li>
 						<h4>ApplicationContext</h4>
+					</li>
+					<li>
+						<h4>Scene</h4>
+					</li>
+					<li>
+						<h4>Camera</h4>
 					</li>
 					<li>
 						<h4>Container</h4>
@@ -111,6 +117,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#camera" class="tsd-kind-icon">camera</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="graphic_view_src.BaseScene.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#coordinate" class="tsd-kind-icon">coordinate</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#defaultSceneViewType" class="tsd-kind-icon">default<wbr>Scene<wbr>View<wbr>Type</a></li>
@@ -119,6 +126,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="graphic_view_src.BaseScene.html#props" class="tsd-kind-icon">props</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="graphic_view_src.BaseScene.html#refs" class="tsd-kind-icon">refs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#resolution" class="tsd-kind-icon">resolution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#scene" class="tsd-kind-icon">scene</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#sceneContext" class="tsd-kind-icon">scene<wbr>Context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#sceneType" class="tsd-kind-icon">scene<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="graphic_view_src.BaseScene.html#state" class="tsd-kind-icon">state</a></li>
@@ -204,6 +212,9 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#setViewportVisible" class="tsd-kind-icon">set<wbr>Viewport<wbr>Visible</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-external"><a href="graphic_view_src.BaseScene.html#shouldComponentUpdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="graphic_view_src.BaseScene.html#transformPos" class="tsd-kind-icon">transform<wbr>Pos</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="graphic_view_src.BaseScene.html#updateCameraInfo" class="tsd-kind-icon">update<wbr>Camera<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#updateCameraPosition" class="tsd-kind-icon">update<wbr>Camera<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#updateCameraTarget" class="tsd-kind-icon">update<wbr>Camera<wbr>Target</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="graphic_view_src.BaseScene.html#updateResolution" class="tsd-kind-icon">update<wbr>Resolution</a></li>
 							</ul>
@@ -217,20 +228,26 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Base<wbr>Scene&lt;ApplicationContext, Container, DisplayObject, Viewport&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/graphic_view_src.BaseSceneProps.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseSceneProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphic_view_src.BaseScene.html" class="tsd-signature-type" data-tsd-kind="Class">BaseScene</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApplicationContext</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Viewport</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Base<wbr>Scene&lt;ApplicationContext, Scene, Camera, Container, DisplayObject, Viewport&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><a href="../interfaces/graphic_view_src.BaseSceneProps.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseSceneProps</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="graphic_view_src.BaseScene.html" class="tsd-signature-type" data-tsd-kind="Class">BaseScene</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApplicationContext</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Scene</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Viewport</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides React.Component&lt;BaseSceneProps&gt;.constructor</p>
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:168</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L172">graphic-view/src/scene.ts:172</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
 									<h4>ApplicationContext</h4>
+								</li>
+								<li>
+									<h4>Scene</h4>
+								</li>
+								<li>
+									<h4>Camera</h4>
 								</li>
 								<li>
 									<h4>Container</h4>
@@ -248,13 +265,28 @@
 									<h5>props: <a href="../interfaces/graphic_view_src.BaseSceneProps.html" class="tsd-signature-type" data-tsd-kind="Interface">BaseSceneProps</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="graphic_view_src.BaseScene.html" class="tsd-signature-type" data-tsd-kind="Class">BaseScene</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApplicationContext</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Viewport</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="graphic_view_src.BaseScene.html" class="tsd-signature-type" data-tsd-kind="Class">BaseScene</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApplicationContext</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Scene</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Container</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Viewport</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="camera" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> camera</h3>
+					<div class="tsd-signature tsd-kind-icon">camera<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Camera</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L158">graphic-view/src/scene.ts:158</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>相机实例，仅 3d 下有</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 					<a name="context" class="tsd-anchor"></a>
 					<h3>context</h3>
@@ -262,7 +294,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from React.Component.context</p>
 						<ul>
-							<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:473</li>
+							<li>Defined in reactivity/node_modules/@types/react/index.d.ts:472</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -290,7 +322,7 @@
 					<div class="tsd-signature tsd-kind-icon">coordinate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CoordinateController</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:160</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L164">graphic-view/src/scene.ts:164</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -300,7 +332,7 @@
 					<div class="tsd-signature tsd-kind-icon">default<wbr>Scene<wbr>View<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:150</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L150">graphic-view/src/scene.ts:150</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -315,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:158</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L162">graphic-view/src/scene.ts:162</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -325,7 +357,7 @@
 					<div class="tsd-signature tsd-kind-icon">mount<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:162</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L166">graphic-view/src/scene.ts:166</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -336,7 +368,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from React.Component.props</p>
 						<ul>
-							<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:498</li>
+							<li>Defined in reactivity/node_modules/@types/react/index.d.ts:497</li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +379,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from React.Component.refs</p>
 						<ul>
-							<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:504</li>
+							<li>Defined in reactivity/node_modules/@types/react/index.d.ts:503</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -372,9 +404,24 @@
 					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:166</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L170">graphic-view/src/scene.ts:170</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="scene" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> scene</h3>
+					<div class="tsd-signature tsd-kind-icon">scene<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Scene</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L156">graphic-view/src/scene.ts:156</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>场景实例，仅 3d 下有</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sceneContext" class="tsd-anchor"></a>
@@ -382,7 +429,7 @@
 					<div class="tsd-signature tsd-kind-icon">scene<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/graphic_view_src.SceneContext.html" class="tsd-signature-type" data-tsd-kind="Interface">SceneContext</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:164</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L168">graphic-view/src/scene.ts:168</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -392,7 +439,7 @@
 					<div class="tsd-signature tsd-kind-icon">scene<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/graphic_view_src.SceneType.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SceneType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:154</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L154">graphic-view/src/scene.ts:154</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -408,7 +455,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from React.Component.state</p>
 						<ul>
-							<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:499</li>
+							<li>Defined in reactivity/node_modules/@types/react/index.d.ts:498</li>
 						</ul>
 					</aside>
 				</section>
@@ -418,7 +465,7 @@
 					<div class="tsd-signature tsd-kind-icon">view<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:148</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L148">graphic-view/src/scene.ts:148</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -433,7 +480,7 @@
 					<div class="tsd-signature tsd-kind-icon">viewport<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Viewport</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:152</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L152">graphic-view/src/scene.ts:152</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -448,7 +495,7 @@
 					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:156</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L160">graphic-view/src/scene.ts:160</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -458,7 +505,7 @@
 					<div class="tsd-signature tsd-kind-icon">BACKGROUND_<wbr>COLOR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0xffffff</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:131</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L131">graphic-view/src/scene.ts:131</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -473,7 +520,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>HEIGHT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 400</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:137</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L137">graphic-view/src/scene.ts:137</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -488,7 +535,7 @@
 					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>WIDTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 600</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:135</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L135">graphic-view/src/scene.ts:135</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -503,7 +550,7 @@
 					<div class="tsd-signature tsd-kind-icon">SCALE_<wbr>BIGGER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1.1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:139</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L139">graphic-view/src/scene.ts:139</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -513,7 +560,7 @@
 					<div class="tsd-signature tsd-kind-icon">SCALE_<wbr>SMALLER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:140</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L140">graphic-view/src/scene.ts:140</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -523,7 +570,7 @@
 					<div class="tsd-signature tsd-kind-icon">TRANSPARENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:133</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L133">graphic-view/src/scene.ts:133</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -538,7 +585,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:142</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L142">graphic-view/src/scene.ts:142</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -553,7 +600,7 @@
 					<div class="tsd-signature tsd-kind-icon">app<wbr>Mounted<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:146</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L146">graphic-view/src/scene.ts:146</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -569,7 +616,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from React.Component.contextType</p>
 						<ul>
-							<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:455</li>
+							<li>Defined in reactivity/node_modules/@types/react/index.d.ts:454</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -601,7 +648,7 @@
 					<div class="tsd-signature tsd-kind-icon">interactive<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">IInteractiveControllerInfo</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in graphic-view/src/scene.ts:144</li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L144">graphic-view/src/scene.ts:144</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -624,7 +671,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.UNSAFE_componentWillMount</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:709</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:708</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -662,7 +709,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.UNSAFE_componentWillReceiveProps</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:741</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:740</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -711,7 +758,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.UNSAFE_componentWillUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:769</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:768</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -760,7 +807,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:274</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L279">graphic-view/src/scene.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -788,7 +835,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:535</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L563">graphic-view/src/scene.ts:563</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -816,7 +863,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:609</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L637">graphic-view/src/scene.ts:637</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -847,7 +894,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:612</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L640">graphic-view/src/scene.ts:640</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -876,7 +923,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.componentDidCatch</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:638</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:637</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -909,7 +956,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides React.Component.componentDidMount</p>
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:197</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L201">graphic-view/src/scene.ts:201</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -927,7 +974,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides React.Component.componentDidUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:201</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L205">graphic-view/src/scene.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -945,7 +992,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.componentWillMount</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:695</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:694</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +1029,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.componentWillReceiveProps</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:724</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:723</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1030,7 +1077,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides React.Component.componentWillUnmount</p>
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:232</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L237">graphic-view/src/scene.ts:237</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1048,7 +1095,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.componentWillUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:754</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:753</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1096,7 +1143,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:458</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L486">graphic-view/src/scene.ts:486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1118,7 +1165,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:493</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L521">graphic-view/src/scene.ts:521</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1140,7 +1187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:375</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L381">graphic-view/src/scene.ts:381</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1171,7 +1218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:265</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L270">graphic-view/src/scene.ts:270</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1193,7 +1240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:432</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L460">graphic-view/src/scene.ts:460</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1221,7 +1268,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:268</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L273">graphic-view/src/scene.ts:273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1243,7 +1290,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:621</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L649">graphic-view/src/scene.ts:649</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1265,7 +1312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:262</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L267">graphic-view/src/scene.ts:267</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1293,7 +1340,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:277</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L282">graphic-view/src/scene.ts:282</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1322,7 +1369,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.forceUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:490</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:489</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1357,7 +1404,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:279</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L284">graphic-view/src/scene.ts:284</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1380,7 +1427,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:351</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L356">graphic-view/src/scene.ts:356</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ApplicationContext</span></h4>
@@ -1397,7 +1444,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:339</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L344">graphic-view/src/scene.ts:344</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">InteractiveController</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1414,7 +1461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:353</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L358">graphic-view/src/scene.ts:358</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1437,7 +1484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:282</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L287">graphic-view/src/scene.ts:287</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1509,7 +1556,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:633</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L661">graphic-view/src/scene.ts:661</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1532,7 +1579,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.getSnapshotBeforeUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:674</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:673</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1561,16 +1608,16 @@
 					<a name="getTools" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Tools</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Tools<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>coordinateTransform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">; </span>hitTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IViewEntity</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Tools<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>coordinateTransform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">; </span>getCamera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">; </span>hitTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IViewEntity</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:363</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L368">graphic-view/src/scene.ts:368</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>coordinateTransform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">; </span>hitTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IViewEntity</span><span class="tsd-signature-symbol"> }</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>coordinateTransform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">; </span>getCamera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Camera</span><span class="tsd-signature-symbol">; </span>hitTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IViewEntity</span><span class="tsd-signature-symbol"> }</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter">
 									<h5>coordinate<wbr>Transform<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Vec2</span></h5>
@@ -1596,6 +1643,21 @@
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vec2</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>get<wbr>Camera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Camera</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Camera</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Camera</span></h4>
 												</li>
 											</ul>
 										</li>
@@ -1641,7 +1703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:332</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L337">graphic-view/src/scene.ts:337</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -1666,7 +1728,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:271</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L276">graphic-view/src/scene.ts:276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1688,7 +1750,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:615</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L643">graphic-view/src/scene.ts:643</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1710,7 +1772,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:618</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L646">graphic-view/src/scene.ts:646</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,7 +1794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:453</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L481">graphic-view/src/scene.ts:481</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1760,7 +1822,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:297</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L302">graphic-view/src/scene.ts:302</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1777,7 +1839,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:445</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L473">graphic-view/src/scene.ts:473</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1805,7 +1867,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:523</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L551">graphic-view/src/scene.ts:551</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1827,7 +1889,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:386</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L392">graphic-view/src/scene.ts:392</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1849,7 +1911,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:537</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L565">graphic-view/src/scene.ts:565</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1872,7 +1934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:574</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L602">graphic-view/src/scene.ts:602</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1895,7 +1957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:564</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L592">graphic-view/src/scene.ts:592</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1918,7 +1980,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:554</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L582">graphic-view/src/scene.ts:582</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1941,7 +2003,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:584</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L612">graphic-view/src/scene.ts:612</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1964,7 +2026,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:591</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L619">graphic-view/src/scene.ts:619</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1987,7 +2049,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:547</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L575">graphic-view/src/scene.ts:575</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2010,7 +2072,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:598</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L626">graphic-view/src/scene.ts:626</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2033,7 +2095,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:259</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L264">graphic-view/src/scene.ts:264</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2062,7 +2124,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.render</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:491</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:490</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactNode</span></h4>
@@ -2079,7 +2141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:423</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L451">graphic-view/src/scene.ts:451</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2096,7 +2158,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:450</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L478">graphic-view/src/scene.ts:478</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2124,7 +2186,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:434</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L462">graphic-view/src/scene.ts:462</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2147,7 +2209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:511</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L539">graphic-view/src/scene.ts:539</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2176,7 +2238,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.setState</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:485</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:484</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -2220,7 +2282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:514</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L542">graphic-view/src/scene.ts:542</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2248,7 +2310,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:517</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L545">graphic-view/src/scene.ts:545</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2276,7 +2338,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:520</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L548">graphic-view/src/scene.ts:548</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2304,7 +2366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:624</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L652">graphic-view/src/scene.ts:652</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2332,7 +2394,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:627</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L655">graphic-view/src/scene.ts:655</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2360,7 +2422,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:630</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L658">graphic-view/src/scene.ts:658</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2389,7 +2451,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from React.Component.shouldComponentUpdate</p>
 								<ul>
-									<li>Defined in graphic-view/node_modules/@types/react/index.d.ts:628</li>
+									<li>Defined in reactivity/node_modules/@types/react/index.d.ts:627</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2428,7 +2490,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:381</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L387">graphic-view/src/scene.ts:387</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2449,6 +2511,79 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updateCameraInfo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Camera<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Camera<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L431">graphic-view/src/scene.ts:431</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateCameraPosition" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> update<wbr>Camera<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Camera<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L446">graphic-view/src/scene.ts:446</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>更新相机位置</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">Vec3</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="updateCameraTarget" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> update<wbr>Camera<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Camera<wbr>Target<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L449">graphic-view/src/scene.ts:449</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>更新相机看向的点</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">Vec3</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updateCursor" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> update<wbr>Cursor</h3>
@@ -2459,7 +2594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:361</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L366">graphic-view/src/scene.ts:366</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2485,7 +2620,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in graphic-view/src/scene.ts:295</li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/graphic-view/src/scene.ts#L300">graphic-view/src/scene.ts:300</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2565,6 +2700,9 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter tsd-is-overwrite">
 								<a href="graphic_view_src.BaseScene.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="graphic_view_src.BaseScene.html#camera" class="tsd-kind-icon">camera</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-external">
 								<a href="graphic_view_src.BaseScene.html#context" class="tsd-kind-icon">context</a>
 							</li>
@@ -2588,6 +2726,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="graphic_view_src.BaseScene.html#resolution" class="tsd-kind-icon">resolution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="graphic_view_src.BaseScene.html#scene" class="tsd-kind-icon">scene</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="graphic_view_src.BaseScene.html#sceneContext" class="tsd-kind-icon">scene<wbr>Context</a>
@@ -2828,6 +2969,15 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="graphic_view_src.BaseScene.html#transformPos" class="tsd-kind-icon">transform<wbr>Pos</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="graphic_view_src.BaseScene.html#updateCameraInfo" class="tsd-kind-icon">update<wbr>Camera<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphic_view_src.BaseScene.html#updateCameraPosition" class="tsd-kind-icon">update<wbr>Camera<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="graphic_view_src.BaseScene.html#updateCameraTarget" class="tsd-kind-icon">update<wbr>Camera<wbr>Target</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="graphic_view_src.BaseScene.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a>

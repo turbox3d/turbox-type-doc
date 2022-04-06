@@ -84,7 +84,12 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#coordinateTransform" class="tsd-kind-icon">coordinate<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getApp" class="tsd-kind-icon">get<wbr>App</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getCamera" class="tsd-kind-icon">get<wbr>Camera</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getRaycaster" class="tsd-kind-icon">get<wbr>Raycaster</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getRootView" class="tsd-kind-icon">get<wbr>Root<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getScene" class="tsd-kind-icon">get<wbr>Scene</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#getScreenShot" class="tsd-kind-icon">get<wbr>Screen<wbr>Shot</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="command_manager_src.ITool.html#hitTarget" class="tsd-kind-icon">hit<wbr>Target</a></li>
 							</ul>
 						</section>
@@ -97,13 +102,13 @@
 					<a name="coordinateTransform" class="tsd-anchor"></a>
 					<h3>coordinate<wbr>Transform</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">coordinate<wbr>Transform<span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Vec3</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Vec3</span></li>
+						<li class="tsd-signature tsd-kind-icon">coordinate<wbr>Transform<span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Vec3</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateType</span>, z<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Vec3</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/command-manager/src/command/type.ts#L20">command-manager/src/command/type.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L28">command-manager/src/command/type.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -114,8 +119,28 @@
 								<li>
 									<h5>type: <span class="tsd-signature-type">CoordinateType</span></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> z: <span class="tsd-signature-type">number</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Vec3</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getApp" class="tsd-anchor"></a>
+					<h3>get<wbr>App</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>App<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L34">command-manager/src/command/type.ts:34</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -129,10 +154,102 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/command-manager/src/command/type.ts#L21">command-manager/src/command/type.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L29">command-manager/src/command/type.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getRaycaster" class="tsd-anchor"></a>
+					<h3>get<wbr>Raycaster</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Raycaster<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L30">command-manager/src/command/type.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getRootView" class="tsd-anchor"></a>
+					<h3>get<wbr>Root<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Root<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L32">command-manager/src/command/type.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getScene" class="tsd-anchor"></a>
+					<h3>get<wbr>Scene</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Scene<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L31">command-manager/src/command/type.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getScreenShot" class="tsd-anchor"></a>
+					<h3>get<wbr>Screen<wbr>Shot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Screen<wbr>Shot<span class="tsd-signature-symbol">(</span>sx<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sy<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, w<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, h<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, fileType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, quality<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, isBase64<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L33">command-manager/src/command/type.ts:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sx: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> sy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> w: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> h: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> fileType: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> quality: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> isBase64: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,7 +263,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/command-manager/src/command/type.ts#L19">command-manager/src/command/type.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/command-manager/src/command/type.ts#L27">command-manager/src/command/type.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,15 +308,6 @@
 						<a href="../modules/graphic_component_three_src.html">graphic-<wbr>component-<wbr>three/src</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_pixi_src.html">graphic-<wbr>view-<wbr>pixi/src</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_three_src.html">graphic-<wbr>view-<wbr>three/src</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_src.html">graphic-<wbr>view/src</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="../modules/math_src.html">math/src</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -207,6 +315,15 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/reactivity_src.html">reactivity/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_core_src.html">renderer-<wbr>core/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_pixi_src.html">renderer-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_three_src.html">renderer-<wbr>three/src</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/shared_src.html">shared/src</a>
@@ -233,7 +350,22 @@
 								<a href="command_manager_src.ITool.html#coordinateTransform" class="tsd-kind-icon">coordinate<wbr>Transform</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="command_manager_src.ITool.html#getApp" class="tsd-kind-icon">get<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="command_manager_src.ITool.html#getCamera" class="tsd-kind-icon">get<wbr>Camera</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="command_manager_src.ITool.html#getRaycaster" class="tsd-kind-icon">get<wbr>Raycaster</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="command_manager_src.ITool.html#getRootView" class="tsd-kind-icon">get<wbr>Root<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="command_manager_src.ITool.html#getScene" class="tsd-kind-icon">get<wbr>Scene</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="command_manager_src.ITool.html#getScreenShot" class="tsd-kind-icon">get<wbr>Screen<wbr>Shot</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="command_manager_src.ITool.html#hitTarget" class="tsd-kind-icon">hit<wbr>Target</a>

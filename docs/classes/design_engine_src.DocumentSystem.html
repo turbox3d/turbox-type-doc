@@ -116,6 +116,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="design_engine_src.DocumentSystem.html#computedPropertyGet-1" class="tsd-kind-icon">computed<wbr>Property<wbr>Get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="design_engine_src.DocumentSystem.html#computedPropertySet-1" class="tsd-kind-icon">computed<wbr>Property<wbr>Set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#createHistory-1" class="tsd-kind-icon">create<wbr>History</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#findModel-1" class="tsd-kind-icon">find<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#findModelById-1" class="tsd-kind-icon">find<wbr>Model<wbr>ById</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#historyChangeCustomHook-1" class="tsd-kind-icon">history<wbr>Change<wbr>Custom<wbr>Hook</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="design_engine_src.DocumentSystem.html#initDomainContext-1" class="tsd-kind-icon">init<wbr>Domain<wbr>Context</a></li>
@@ -126,6 +127,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="design_engine_src.DocumentSystem.html#propertyGet-1" class="tsd-kind-icon">property<wbr>Get</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="design_engine_src.DocumentSystem.html#propertySet-1" class="tsd-kind-icon">property<wbr>Set</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#redo-1" class="tsd-kind-icon">redo</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#removeModel-1" class="tsd-kind-icon">remove<wbr>Model</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#removeModelById-1" class="tsd-kind-icon">remove<wbr>Model<wbr>ById</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="design_engine_src.DocumentSystem.html#restore" class="tsd-kind-icon">restore</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="design_engine_src.DocumentSystem.html#resumeRecord-1" class="tsd-kind-icon">resume<wbr>Record</a></li>
@@ -150,7 +152,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:27</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:34</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="design_engine_src.DocumentSystem.html" class="tsd-signature-type" data-tsd-kind="Class">DocumentSystem</a></h4>
@@ -163,18 +165,18 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="__turboxProperties" class="tsd-anchor"></a>
 					<h3>$$turbox<wbr>Properties</h3>
-					<div class="tsd-signature tsd-kind-icon">$$turbox<wbr>Properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>$$turboxProperties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">{ models?: Map&lt;string, EntityObject&gt; | undefined; loading?: boolean | undefined; undoable?: boolean | undefined; redoable?: boolean | undefined; disableUndoRedo?: boolean | undefined; ... 22 more ...; $update?: (&lt;K extends never&gt;(obj: {} | Pick&lt;...&gt;, actionName?: string | undefined, displayName?: string | undefined)...</span><span class="tsd-signature-symbol">; </span>disableUndoRedo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>history<span class="tsd-signature-symbol">?: </span><a href="reactivity_react_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a><span class="tsd-signature-symbol">; </span>loading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>maxStepNumber<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>redoable<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>undoable<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>$update<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>addModel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>applyHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>clear<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>clearHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>computedPropertyGet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>computedPropertySet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>createHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>findModelById<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>historyChangeCustomHook<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>initDomainContext<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isLoaded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isLoading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>pauseRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>propertyGet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>propertySet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>redo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>removeModelById<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>resumeRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>undo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">$$turbox<wbr>Properties<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>$$turboxProperties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">{ models?: Map&lt;string, EntityObject&gt; | undefined; loading?: boolean | undefined; undoable?: boolean | undefined; redoable?: boolean | undefined; disableUndoRedo?: boolean | undefined; ... 24 more ...; $update?: (&lt;K extends never&gt;(obj: {} | Pick&lt;...&gt;, actionName?: string | undefined, displayName?: string | undefined,...</span><span class="tsd-signature-symbol">; </span>disableUndoRedo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>history<span class="tsd-signature-symbol">?: </span><a href="reactivity_react_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a><span class="tsd-signature-symbol">; </span>loading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>maxStepNumber<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>redoable<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>undoable<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>$update<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>addModel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>applyHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>clear<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>clearHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>computedPropertyGet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>computedPropertySet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>createHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>findModel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>findModelById<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>historyChangeCustomHook<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>initDomainContext<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isLoaded<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isLoading<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>pauseRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>propertyGet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>propertySet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>redo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>removeModel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>removeModelById<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>resumeRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>undo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#__turboxProperties">$$turboxProperties</a></p>
 						<ul>
-							<li>Defined in reactivity/typings/core/domain.d.ts:19</li>
+							<li>Defined in reactivity/typings/core/domain.d.ts:26</li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> $$turbox<wbr>Properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">{ models?: Map&lt;string, EntityObject&gt; | undefined; loading?: boolean | undefined; undoable?: boolean | undefined; redoable?: boolean | undefined; disableUndoRedo?: boolean | undefined; ... 22 more ...; $update?: (&lt;K extends never&gt;(obj: {} | Pick&lt;...&gt;, actionName?: string | undefined, displayName?: string | undefined)...</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> $$turbox<wbr>Properties<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">{ models?: Map&lt;string, EntityObject&gt; | undefined; loading?: boolean | undefined; undoable?: boolean | undefined; redoable?: boolean | undefined; disableUndoRedo?: boolean | undefined; ... 24 more ...; $update?: (&lt;K extends never&gt;(obj: {} | Pick&lt;...&gt;, actionName?: string | undefined, displayName?: string | undefined,...</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> disable<wbr>Undo<wbr>Redo<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span></h5>
@@ -200,13 +202,13 @@
 							<li class="tsd-parameter">
 								<h5>$update<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal tsd-has-type-parameter">
-									<li class="tsd-signature tsd-kind-icon">$update&lt;K&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, actionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, displayName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon">$update&lt;K&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, actionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, displayName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, forceSaveHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, isNeedRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, immediately<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in reactivity/typings/core/domain.d.ts:36</li>
+												<li>Defined in reactivity/typings/core/domain.d.ts:43</li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -231,6 +233,15 @@
 											<li>
 												<h5><span class="tsd-flag ts-flagOptional">Optional</span> displayName: <span class="tsd-signature-type">string</span></h5>
 											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> forceSaveHistory: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> isNeedRecord: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> immediately: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 									</li>
@@ -239,13 +250,13 @@
 							<li class="tsd-parameter">
 								<h5>add<wbr>Model<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
-									<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L27">design-engine/src/document-system/index.ts:27</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L27">design-engine/src/document-system/index.ts:27</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -256,7 +267,7 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></h5>
+												<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -272,7 +283,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L128">design-engine/src/document-system/index.ts:128</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L160">design-engine/src/document-system/index.ts:160</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -293,7 +304,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L42">design-engine/src/document-system/index.ts:42</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L63">design-engine/src/document-system/index.ts:63</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -314,7 +325,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L77">design-engine/src/document-system/index.ts:77</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L109">design-engine/src/document-system/index.ts:109</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -335,7 +346,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in reactivity/typings/core/domain.d.ts:31</li>
+												<li>Defined in reactivity/typings/core/domain.d.ts:38</li>
 											</ul>
 										</aside>
 										<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -369,7 +380,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in reactivity/typings/core/domain.d.ts:32</li>
+												<li>Defined in reactivity/typings/core/domain.d.ts:39</li>
 											</ul>
 										</aside>
 										<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -400,7 +411,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L52">design-engine/src/document-system/index.ts:52</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L84">design-engine/src/document-system/index.ts:84</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -419,15 +430,42 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">: </span>function</h5>
+								<h5>find<wbr>Model<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
-									<li class="tsd-signature tsd-kind-icon">find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></li>
+									<li class="tsd-signature tsd-kind-icon">find<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L47">design-engine/src/document-system/index.ts:47</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L68">design-engine/src/document-system/index.ts:68</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>查找模型</p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L76">design-engine/src/document-system/index.ts:76</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -438,10 +476,10 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>id: <span class="tsd-signature-type">string</span></h5>
+												<h5>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 											</li>
 										</ul>
-										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></h4>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
 									</li>
 								</ul>
 							</li>
@@ -454,7 +492,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L72">design-engine/src/document-system/index.ts:72</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L104">design-engine/src/document-system/index.ts:104</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -484,7 +522,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L19">design-engine/src/document-system/index.ts:19</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L19">design-engine/src/document-system/index.ts:19</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isNeedRecord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -505,7 +543,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L143">design-engine/src/document-system/index.ts:143</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L175">design-engine/src/document-system/index.ts:175</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -526,7 +564,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L137">design-engine/src/document-system/index.ts:137</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L169">design-engine/src/document-system/index.ts:169</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -547,7 +585,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L86">design-engine/src/document-system/index.ts:86</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L118">design-engine/src/document-system/index.ts:118</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -562,13 +600,13 @@
 							<li class="tsd-parameter">
 								<h5>property<wbr>Get<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
-									<li class="tsd-signature tsd-kind-icon">property<wbr>Get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactorConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+									<li class="tsd-signature tsd-kind-icon">property<wbr>Get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactorConfig</span>, hasInitializer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in reactivity/typings/core/domain.d.ts:29</li>
+												<li>Defined in reactivity/typings/core/domain.d.ts:36</li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -578,6 +616,12 @@
 											</li>
 											<li>
 												<h5>config: <span class="tsd-signature-type">ReactorConfig</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> hasInitializer: <span class="tsd-signature-type">boolean</span></h5>
+											</li>
+											<li>
+												<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">any</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -593,7 +637,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in reactivity/typings/core/domain.d.ts:30</li>
+												<li>Defined in reactivity/typings/core/domain.d.ts:37</li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -621,7 +665,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L116">design-engine/src/document-system/index.ts:116</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L148">design-engine/src/document-system/index.ts:148</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -634,15 +678,42 @@
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">: </span>function</h5>
+								<h5>remove<wbr>Model<span class="tsd-signature-symbol">: </span>function</h5>
 								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
-									<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L36">design-engine/src/document-system/index.ts:36</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L43">design-engine/src/document-system/index.ts:43</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>删除模型</p>
+											</div>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L53">design-engine/src/document-system/index.ts:53</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -653,7 +724,7 @@
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>id: <span class="tsd-signature-type">string</span></h5>
+												<h5>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -669,7 +740,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L95">design-engine/src/document-system/index.ts:95</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L127">design-engine/src/document-system/index.ts:127</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -690,7 +761,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L104">design-engine/src/document-system/index.ts:104</a></li>
+												<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L136">design-engine/src/document-system/index.ts:136</a></li>
 											</ul>
 										</aside>
 										<div class="tsd-comment tsd-typography">
@@ -711,7 +782,7 @@
 					<div class="tsd-signature tsd-kind-icon">disable<wbr>Undo<wbr>Redo<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L13">design-engine/src/document-system/index.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L13">design-engine/src/document-system/index.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -721,7 +792,7 @@
 					<div class="tsd-signature tsd-kind-icon">history<span class="tsd-signature-symbol">:</span> <a href="reactivity_react_src.TimeTravel.html" class="tsd-signature-type" data-tsd-kind="Class">TimeTravel</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L15">design-engine/src/document-system/index.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L15">design-engine/src/document-system/index.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -731,7 +802,7 @@
 					<div class="tsd-signature tsd-kind-icon">loading<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L7">design-engine/src/document-system/index.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L7">design-engine/src/document-system/index.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -741,7 +812,7 @@
 					<div class="tsd-signature tsd-kind-icon">max<wbr>Step<wbr>Number<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 20</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L17">design-engine/src/document-system/index.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L17">design-engine/src/document-system/index.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -751,7 +822,7 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L5">design-engine/src/document-system/index.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L5">design-engine/src/document-system/index.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -761,7 +832,7 @@
 					<div class="tsd-signature tsd-kind-icon">redoable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L11">design-engine/src/document-system/index.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L11">design-engine/src/document-system/index.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -771,7 +842,7 @@
 					<div class="tsd-signature tsd-kind-icon">undoable<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L9">design-engine/src/document-system/index.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L9">design-engine/src/document-system/index.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -782,14 +853,14 @@
 					<a name="_update-1" class="tsd-anchor"></a>
 					<h3>$update</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">$update&lt;K&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, actionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, displayName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">$update&lt;K&gt;<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span>, actionName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, displayName<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, forceSaveHistory<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, isNeedRecord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, immediately<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#_update-1">$update</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:36</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:43</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -814,6 +885,15 @@
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> displayName: <span class="tsd-signature-type">string</span></h5>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> forceSaveHistory: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> isNeedRecord: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> immediately: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
@@ -823,13 +903,13 @@
 					<a name="addModel-1" class="tsd-anchor"></a>
 					<h3>add<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L27">design-engine/src/document-system/index.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L27">design-engine/src/document-system/index.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -840,7 +920,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></h5>
+									<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -857,7 +937,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L128">design-engine/src/document-system/index.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L160">design-engine/src/document-system/index.ts:160</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -879,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L148">design-engine/src/document-system/index.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L180">design-engine/src/document-system/index.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -901,7 +981,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L42">design-engine/src/document-system/index.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L63">design-engine/src/document-system/index.ts:63</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -923,7 +1003,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L77">design-engine/src/document-system/index.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L109">design-engine/src/document-system/index.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -946,7 +1026,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#computedPropertyGet-1">computedPropertyGet</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:31</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:38</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -982,7 +1062,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#computedPropertySet-1">computedPropertySet</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:32</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:39</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1014,7 +1094,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L52">design-engine/src/document-system/index.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L84">design-engine/src/document-system/index.ts:84</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1033,16 +1113,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="findModelById-1" class="tsd-anchor"></a>
-					<h3>find<wbr>Model<wbr>ById</h3>
+					<a name="findModel-1" class="tsd-anchor"></a>
+					<h3>find<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L47">design-engine/src/document-system/index.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L68">design-engine/src/document-system/index.ts:68</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>查找模型</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findModelById-1" class="tsd-anchor"></a>
+					<h3>find<wbr>Model<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L76">design-engine/src/document-system/index.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1053,10 +1161,10 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<h5>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1070,7 +1178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L72">design-engine/src/document-system/index.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L104">design-engine/src/document-system/index.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1102,7 +1210,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#initDomainContext-1">initDomainContext</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L19">design-engine/src/document-system/index.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L19">design-engine/src/document-system/index.ts:19</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>isNeedRecord<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
@@ -1124,7 +1232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L143">design-engine/src/document-system/index.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L175">design-engine/src/document-system/index.ts:175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1146,7 +1254,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L137">design-engine/src/document-system/index.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L169">design-engine/src/document-system/index.ts:169</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1168,7 +1276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L158">design-engine/src/document-system/index.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L190">design-engine/src/document-system/index.ts:190</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1190,7 +1298,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L86">design-engine/src/document-system/index.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L118">design-engine/src/document-system/index.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1206,14 +1314,14 @@
 					<a name="propertyGet-1" class="tsd-anchor"></a>
 					<h3>property<wbr>Get</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">property<wbr>Get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactorConfig</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">property<wbr>Get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ReactorConfig</span>, hasInitializer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, defaultValue<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#propertyGet-1">propertyGet</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:29</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:36</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1223,6 +1331,12 @@
 								</li>
 								<li>
 									<h5>config: <span class="tsd-signature-type">ReactorConfig</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> hasInitializer: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> defaultValue: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
@@ -1240,7 +1354,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="reactivity_react_src.Domain.html">Domain</a>.<a href="reactivity_react_src.Domain.html#propertySet-1">propertySet</a></p>
 								<ul>
-									<li>Defined in reactivity/typings/core/domain.d.ts:30</li>
+									<li>Defined in reactivity/typings/core/domain.d.ts:37</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1269,7 +1383,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L116">design-engine/src/document-system/index.ts:116</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L148">design-engine/src/document-system/index.ts:148</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1282,16 +1396,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="removeModelById-1" class="tsd-anchor"></a>
-					<h3>remove<wbr>Model<wbr>ById</h3>
+					<a name="removeModel-1" class="tsd-anchor"></a>
+					<h3>remove<wbr>Model</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<span class="tsd-signature-symbol">(</span>model<span class="tsd-signature-symbol">: </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L36">design-engine/src/document-system/index.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L43">design-engine/src/document-system/index.ts:43</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>删除模型</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>model: <a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol"> | </span><a href="design_engine_src.EntityObject.html" class="tsd-signature-type" data-tsd-kind="Class">EntityObject</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeModelById-1" class="tsd-anchor"></a>
+					<h3>remove<wbr>Model<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Model<wbr>ById<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L53">design-engine/src/document-system/index.ts:53</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1302,7 +1444,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>id: <span class="tsd-signature-type">string</span></h5>
+									<h5>id: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1319,7 +1461,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L153">design-engine/src/document-system/index.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L185">design-engine/src/document-system/index.ts:185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1341,7 +1483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L95">design-engine/src/document-system/index.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L127">design-engine/src/document-system/index.ts:127</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1363,7 +1505,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L163">design-engine/src/document-system/index.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L195">design-engine/src/document-system/index.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1385,7 +1527,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L104">design-engine/src/document-system/index.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L136">design-engine/src/document-system/index.ts:136</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1407,7 +1549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/a9e19c8/packages/design-engine/src/document-system/index.ts#L168">design-engine/src/document-system/index.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/design-engine/src/document-system/index.ts#L200">design-engine/src/document-system/index.ts:200</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1447,15 +1589,6 @@
 						<a href="../modules/graphic_component_three_src.html">graphic-<wbr>component-<wbr>three/src</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_pixi_src.html">graphic-<wbr>view-<wbr>pixi/src</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_three_src.html">graphic-<wbr>view-<wbr>three/src</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="../modules/graphic_view_src.html">graphic-<wbr>view/src</a>
-					</li>
-					<li class=" tsd-kind-module">
 						<a href="../modules/math_src.html">math/src</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -1463,6 +1596,15 @@
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/reactivity_src.html">reactivity/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_core_src.html">renderer-<wbr>core/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_pixi_src.html">renderer-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_three_src.html">renderer-<wbr>three/src</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="../modules/shared_src.html">shared/src</a>
@@ -1537,6 +1679,9 @@
 								<a href="design_engine_src.DocumentSystem.html#createHistory-1" class="tsd-kind-icon">create<wbr>History</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="design_engine_src.DocumentSystem.html#findModel-1" class="tsd-kind-icon">find<wbr>Model</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="design_engine_src.DocumentSystem.html#findModelById-1" class="tsd-kind-icon">find<wbr>Model<wbr>ById</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
@@ -1565,6 +1710,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="design_engine_src.DocumentSystem.html#redo-1" class="tsd-kind-icon">redo</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="design_engine_src.DocumentSystem.html#removeModel-1" class="tsd-kind-icon">remove<wbr>Model</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="design_engine_src.DocumentSystem.html#removeModelById-1" class="tsd-kind-icon">remove<wbr>Model<wbr>ById</a>
@@ -1601,6 +1749,9 @@
 						<a href="design_engine_src.HintCommand.html" class="tsd-kind-icon">Hint<wbr>Command</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="design_engine_src.ImageSystem.html" class="tsd-kind-icon">Image<wbr>System</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="design_engine_src.InferenceEngine.html" class="tsd-kind-icon">Inference<wbr>Engine</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
@@ -1608,6 +1759,9 @@
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="design_engine_src.MaterialBrushCommand.html" class="tsd-kind-icon">Material<wbr>Brush<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="design_engine_src.MaterialDragSystem.html" class="tsd-kind-icon">Material<wbr>Drag<wbr>System</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-module">
 						<a href="design_engine_src.MeasureCommand.html" class="tsd-kind-icon">Measure<wbr>Command</a>

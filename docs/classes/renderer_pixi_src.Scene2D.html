@@ -1,0 +1,2605 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Scene2D | turbox</title>
+	<meta name="description" content="Documentation for turbox">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">turbox</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">turbox</a>
+				</li>
+				<li>
+					<a href="../modules/renderer_pixi_src.html">renderer-pixi/src</a>
+				</li>
+				<li>
+					<a href="renderer_pixi_src.Scene2D.html">Scene2D</a>
+				</li>
+			</ul>
+			<h1>Class Scene2D</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="tsd-signature-type">BaseScene</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PIXI.Application</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PIXI.Container</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PIXI.DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">PIXI.Sprite</span><span class="tsd-signature-symbol">&gt;</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">Scene2D</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#_vNode" class="tsd-kind-icon">_v<wbr>Node</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#backgroundImage" class="tsd-kind-icon">background<wbr>Image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="renderer_pixi_src.Scene2D.html#brt" class="tsd-kind-icon">brt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#camera" class="tsd-kind-icon">camera</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#coordinate" class="tsd-kind-icon">coordinate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#defaultSceneViewType" class="tsd-kind-icon">default<wbr>Scene<wbr>View<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#getCurrentApp" class="tsd-kind-icon">get<wbr>Current<wbr>App</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#getCurrentInteractiveController" class="tsd-kind-icon">get<wbr>Current<wbr>Interactive<wbr>Controller</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#maxFPS" class="tsd-kind-icon">maxFPS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#mountTimer" class="tsd-kind-icon">mount<wbr>Timer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="renderer_pixi_src.Scene2D.html#offsetCenter" class="tsd-kind-icon">offset<wbr>Center</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onClick" class="tsd-kind-icon">on<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onDBClick" class="tsd-kind-icon">onDBClick</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onDragEnd" class="tsd-kind-icon">on<wbr>Drag<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onDragMove" class="tsd-kind-icon">on<wbr>Drag<wbr>Move</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onDragStart" class="tsd-kind-icon">on<wbr>Drag<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPinch" class="tsd-kind-icon">on<wbr>Pinch</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPinchEnd" class="tsd-kind-icon">on<wbr>Pinch<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPinchStart" class="tsd-kind-icon">on<wbr>Pinch<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPointerMove" class="tsd-kind-icon">on<wbr>Pointer<wbr>Move</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPointerUp" class="tsd-kind-icon">on<wbr>Pointer<wbr>Up</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPress" class="tsd-kind-icon">on<wbr>Press</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onPressUp" class="tsd-kind-icon">on<wbr>Press<wbr>Up</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onRightClick" class="tsd-kind-icon">on<wbr>Right<wbr>Click</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onRotate" class="tsd-kind-icon">on<wbr>Rotate</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onRotateEnd" class="tsd-kind-icon">on<wbr>Rotate<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onRotateStart" class="tsd-kind-icon">on<wbr>Rotate<wbr>Start</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#onWheel" class="tsd-kind-icon">on<wbr>Wheel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="renderer_pixi_src.Scene2D.html#originalResizeFramebufferFunction" class="tsd-kind-icon">original<wbr>Resize<wbr>Framebuffer<wbr>Function</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#props" class="tsd-kind-icon">props</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#raycaster" class="tsd-kind-icon">raycaster</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#renderFlag" class="tsd-kind-icon">render<wbr>Flag</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#resolution" class="tsd-kind-icon">resolution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="renderer_pixi_src.Scene2D.html#rt" class="tsd-kind-icon">rt</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#scene" class="tsd-kind-icon">scene</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#sceneContext" class="tsd-kind-icon">scene<wbr>Context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#sceneType" class="tsd-kind-icon">scene<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#view" class="tsd-kind-icon">view</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#viewport" class="tsd-kind-icon">viewport</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#width" class="tsd-kind-icon">width</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#BACKGROUND_COLOR" class="tsd-kind-icon">BACKGROUND_<wbr>COLOR</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#DEFAULT_HEIGHT" class="tsd-kind-icon">DEFAULT_<wbr>HEIGHT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#DEFAULT_WIDTH" class="tsd-kind-icon">DEFAULT_<wbr>WIDTH</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#SCALE_BIGGER" class="tsd-kind-icon">SCALE_<wbr>BIGGER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#SCALE_SMALLER" class="tsd-kind-icon">SCALE_<wbr>SMALLER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#TRANSPARENT" class="tsd-kind-icon">TRANSPARENT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#appMap" class="tsd-kind-icon">app<wbr>Map</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#appMountedStatus" class="tsd-kind-icon">app<wbr>Mounted<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="renderer_pixi_src.Scene2D.html#interactiveMap" class="tsd-kind-icon">interactive<wbr>Map</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="renderer_pixi_src.Scene2D.html#context" class="tsd-kind-icon">context</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#addChildView" class="tsd-kind-icon">add<wbr>Child<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#addRootViewContainer" class="tsd-kind-icon">add<wbr>Root<wbr>View<wbr>Container</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#canvasDragImpl" class="tsd-kind-icon">canvas<wbr>Drag<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#canvasScaleImpl" class="tsd-kind-icon">canvas<wbr>Scale<wbr>Impl</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#componentDidMount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#componentDidUpdate" class="tsd-kind-icon">component<wbr>Did<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#componentWillMount" class="tsd-kind-icon">component<wbr>Will<wbr>Mount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#componentWillUnmount" class="tsd-kind-icon">component<wbr>Will<wbr>Unmount</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#componentWillUpdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#createApp" class="tsd-kind-icon">create<wbr>App</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#createCoordinateController" class="tsd-kind-icon">create<wbr>Coordinate<wbr>Controller</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#createView" class="tsd-kind-icon">create<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#createViewport" class="tsd-kind-icon">create<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#destroyApp" class="tsd-kind-icon">destroy<wbr>App</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#destroyRendererInteraction" class="tsd-kind-icon">destroy<wbr>Renderer<wbr>Interaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="renderer_pixi_src.Scene2D.html#fixResizeFramebufferBug" class="tsd-kind-icon">fix<wbr>Resize<wbr>Framebuffer<wbr>Bug</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#forceUpdate" class="tsd-kind-icon">force<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getCanvasView" class="tsd-kind-icon">get<wbr>Canvas<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getHitTargetOriginal" class="tsd-kind-icon">get<wbr>Hit<wbr>Target<wbr>Original</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getScreenShot" class="tsd-kind-icon">get<wbr>Screen<wbr>Shot</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getViewInfo" class="tsd-kind-icon">get<wbr>View<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getViewport" class="tsd-kind-icon">get<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#getViewportInfo" class="tsd-kind-icon">get<wbr>Viewport<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#initSkyBox" class="tsd-kind-icon">init<wbr>Sky<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#removeAppChildrenView" class="tsd-kind-icon">remove<wbr>App<wbr>Children<wbr>View</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#render" class="tsd-kind-icon">render</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#resizeStage" class="tsd-kind-icon">resize<wbr>Stage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#resizeViewport" class="tsd-kind-icon">resize<wbr>Viewport</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setBackGroundImage" class="tsd-kind-icon">set<wbr>Back<wbr>Ground<wbr>Image</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewPosition" class="tsd-kind-icon">set<wbr>View<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewScale" class="tsd-kind-icon">set<wbr>View<wbr>Scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewVisible" class="tsd-kind-icon">set<wbr>View<wbr>Visible</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewportPosition" class="tsd-kind-icon">set<wbr>Viewport<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewportScale" class="tsd-kind-icon">set<wbr>Viewport<wbr>Scale</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#setViewportVisible" class="tsd-kind-icon">set<wbr>Viewport<wbr>Visible</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="renderer_pixi_src.Scene2D.html#shouldComponentUpdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#updateCameraPosition" class="tsd-kind-icon">update<wbr>Camera<wbr>Position</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#updateCameraTarget" class="tsd-kind-icon">update<wbr>Camera<wbr>Target</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="renderer_pixi_src.Scene2D.html#updateResolution" class="tsd-kind-icon">update<wbr>Resolution</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Scene2D<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="renderer_pixi_src.Scene2D.html" class="tsd-signature-type" data-tsd-kind="Class">Scene2D</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene&lt;PIXI.Application, never, never, never, PIXI.Container, PIXI.DisplayObject, PIXI.Sprite&gt;.constructor</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L68">renderer-pixi/src/Scene2D/index.tsx:68</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>props: <span class="tsd-signature-type">BaseSceneProps</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="renderer_pixi_src.Scene2D.html" class="tsd-signature-type" data-tsd-kind="Class">Scene2D</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="_vNode" class="tsd-anchor"></a>
+					<h3>_v<wbr>Node</h3>
+					<div class="tsd-signature tsd-kind-icon">_v<wbr>Node<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">VirtualNode</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene._vNode</p>
+						<ul>
+							<li>Defined in renderer-core/typings/component.d.ts:7</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="backgroundImage" class="tsd-anchor"></a>
+					<h3>background<wbr>Image</h3>
+					<div class="tsd-signature tsd-kind-icon">background<wbr>Image<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">DisplayObject</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.backgroundImage</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:159</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="brt" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> brt</h3>
+					<div class="tsd-signature tsd-kind-icon">brt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BaseRenderTexture</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L62">renderer-pixi/src/Scene2D/index.tsx:62</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="camera" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> camera</h3>
+					<div class="tsd-signature tsd-kind-icon">camera<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.camera</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:150</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>相机实例，仅 3d 下有</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="coordinate" class="tsd-anchor"></a>
+					<h3>coordinate</h3>
+					<div class="tsd-signature tsd-kind-icon">coordinate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">CoordinateController</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.coordinate</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:155</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="defaultSceneViewType" class="tsd-anchor"></a>
+					<h3>default<wbr>Scene<wbr>View<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Scene<wbr>View<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides BaseScene.defaultSceneViewType</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L56">renderer-pixi/src/Scene2D/index.tsx:56</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="getCurrentApp" class="tsd-anchor"></a>
+					<h3>get<wbr>Current<wbr>App</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>App<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Application</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.getCurrentApp</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:198</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Application</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Application</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="getCurrentInteractiveController" class="tsd-anchor"></a>
+					<h3>get<wbr>Current<wbr>Interactive<wbr>Controller</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Current<wbr>Interactive<wbr>Controller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">InteractiveController</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.getCurrentInteractiveController</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:197</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">InteractiveController</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">InteractiveController</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="height" class="tsd-anchor"></a>
+					<h3>height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.height</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:154</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="maxFPS" class="tsd-anchor"></a>
+					<h3>maxFPS</h3>
+					<div class="tsd-signature tsd-kind-icon">maxFPS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.maxFPS</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:160</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="mountTimer" class="tsd-anchor"></a>
+					<h3>mount<wbr>Timer</h3>
+					<div class="tsd-signature tsd-kind-icon">mount<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.mountTimer</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:156</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="offsetCenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> offset<wbr>Center</h3>
+					<div class="tsd-signature tsd-kind-icon">offset<wbr>Center<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Vec2</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L60">renderer-pixi/src/Scene2D/index.tsx:60</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onClick" class="tsd-anchor"></a>
+					<h3>on<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onClick</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:245</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDBClick" class="tsd-anchor"></a>
+					<h3>onDBClick</h3>
+					<div class="tsd-signature tsd-kind-icon">onDBClick<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onDBClick</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:246</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDragEnd" class="tsd-anchor"></a>
+					<h3>on<wbr>Drag<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Drag<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onDragEnd</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:250</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDragMove" class="tsd-anchor"></a>
+					<h3>on<wbr>Drag<wbr>Move</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Drag<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onDragMove</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:249</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onDragStart" class="tsd-anchor"></a>
+					<h3>on<wbr>Drag<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Drag<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onDragStart</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:248</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPinch" class="tsd-anchor"></a>
+					<h3>on<wbr>Pinch</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pinch<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPinch</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:252</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPinchEnd" class="tsd-anchor"></a>
+					<h3>on<wbr>Pinch<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pinch<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPinchEnd</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:253</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPinchStart" class="tsd-anchor"></a>
+					<h3>on<wbr>Pinch<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pinch<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPinchStart</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:251</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPointerMove" class="tsd-anchor"></a>
+					<h3>on<wbr>Pointer<wbr>Move</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Move<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPointerMove</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:259</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPointerUp" class="tsd-anchor"></a>
+					<h3>on<wbr>Pointer<wbr>Up</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Pointer<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPointerUp</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:260</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPress" class="tsd-anchor"></a>
+					<h3>on<wbr>Press</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Press<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPress</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:257</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onPressUp" class="tsd-anchor"></a>
+					<h3>on<wbr>Press<wbr>Up</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Press<wbr>Up<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onPressUp</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:258</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRightClick" class="tsd-anchor"></a>
+					<h3>on<wbr>Right<wbr>Click</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Right<wbr>Click<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onRightClick</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:247</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRotate" class="tsd-anchor"></a>
+					<h3>on<wbr>Rotate</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Rotate<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onRotate</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:255</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRotateEnd" class="tsd-anchor"></a>
+					<h3>on<wbr>Rotate<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Rotate<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onRotateEnd</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:256</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onRotateStart" class="tsd-anchor"></a>
+					<h3>on<wbr>Rotate<wbr>Start</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Rotate<wbr>Start<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onRotateStart</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:254</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="onWheel" class="tsd-anchor"></a>
+					<h3>on<wbr>Wheel</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Wheel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WheelEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.onWheel</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:261</li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-signature">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-class">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">WheelEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>event: <span class="tsd-signature-type">WheelEvent</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="originalResizeFramebufferFunction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> original<wbr>Resize<wbr>Framebuffer<wbr>Function</h3>
+					<div class="tsd-signature tsd-kind-icon">original<wbr>Resize<wbr>Framebuffer<wbr>Function<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L66">renderer-pixi/src/Scene2D/index.tsx:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="props" class="tsd-anchor"></a>
+					<h3>props</h3>
+					<div class="tsd-signature tsd-kind-icon">props<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">BaseSceneProps</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.props</p>
+						<ul>
+							<li>Defined in renderer-core/typings/component.d.ts:6</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="raycaster" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> raycaster</h3>
+					<div class="tsd-signature tsd-kind-icon">raycaster<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.raycaster</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:152</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>射线实例，仅 3d 下有</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="renderFlag" class="tsd-anchor"></a>
+					<h3>render<wbr>Flag</h3>
+					<div class="tsd-signature tsd-kind-icon">render<wbr>Flag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.renderFlag</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:161</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="resolution" class="tsd-anchor"></a>
+					<h3>resolution</h3>
+					<div class="tsd-signature tsd-kind-icon">resolution<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.resolution</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:158</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rt" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> rt</h3>
+					<div class="tsd-signature tsd-kind-icon">rt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RenderTexture</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L64">renderer-pixi/src/Scene2D/index.tsx:64</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="scene" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> scene</h3>
+					<div class="tsd-signature tsd-kind-icon">scene<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.scene</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:148</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>场景实例，仅 3d 下有</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="sceneContext" class="tsd-anchor"></a>
+					<h3>scene<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">scene<wbr>Context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SceneContext</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.sceneContext</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:157</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+					<a name="sceneType" class="tsd-anchor"></a>
+					<h3>scene<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">scene<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SceneType</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<p>Overrides BaseScene.sceneType</p>
+						<ul>
+							<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L58">renderer-pixi/src/Scene2D/index.tsx:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="view" class="tsd-anchor"></a>
+					<h3>view</h3>
+					<div class="tsd-signature tsd-kind-icon">view<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Container</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.view</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:140</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>模型实际容器</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="viewport" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> viewport</h3>
+					<div class="tsd-signature tsd-kind-icon">viewport<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Sprite</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.viewport</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:144</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>模型视口容器（有多视图的时候才有）</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="width" class="tsd-anchor"></a>
+					<h3>width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.width</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:153</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="BACKGROUND_COLOR" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> BACKGROUND_<wbr>COLOR</h3>
+					<div class="tsd-signature tsd-kind-icon">BACKGROUND_<wbr>COLOR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.BACKGROUND_COLOR</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:124</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认背景色</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="DEFAULT_HEIGHT" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT_<wbr>HEIGHT</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>HEIGHT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.DEFAULT_HEIGHT</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:130</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认画布高度</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="DEFAULT_WIDTH" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> DEFAULT_<wbr>WIDTH</h3>
+					<div class="tsd-signature tsd-kind-icon">DEFAULT_<wbr>WIDTH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.DEFAULT_WIDTH</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:128</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认画布宽度</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="SCALE_BIGGER" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SCALE_<wbr>BIGGER</h3>
+					<div class="tsd-signature tsd-kind-icon">SCALE_<wbr>BIGGER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.SCALE_BIGGER</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:131</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="SCALE_SMALLER" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> SCALE_<wbr>SMALLER</h3>
+					<div class="tsd-signature tsd-kind-icon">SCALE_<wbr>SMALLER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.SCALE_SMALLER</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:132</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="TRANSPARENT" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> TRANSPARENT</h3>
+					<div class="tsd-signature tsd-kind-icon">TRANSPARENT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.TRANSPARENT</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:126</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>默认是否透明</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="appMap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> app<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">app<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.appMap</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:134</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>挂载点与应用上下文的映射关系</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="appMountedStatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> app<wbr>Mounted<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">app<wbr>Mounted<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.appMountedStatus</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:138</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>应用上下文是否已经挂载的状态</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="interactiveMap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> interactive<wbr>Map</h3>
+					<div class="tsd-signature tsd-kind-icon">interactive<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">IInteractiveControllerInfo</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from BaseScene.interactiveMap</p>
+						<ul>
+							<li>Defined in renderer-core/typings/scene.d.ts:136</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>应用上下文与不同视角交互控制器的映射关系</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:8</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="addChildView" class="tsd-anchor"></a>
+					<h3>add<wbr>Child<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Child<wbr>View<span class="tsd-signature-symbol">(</span>view<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.addChildView</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L273">renderer-pixi/src/Scene2D/index.tsx:273</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>view: <span class="tsd-signature-type">DisplayObject</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="addRootViewContainer" class="tsd-anchor"></a>
+					<h3>add<wbr>Root<wbr>View<wbr>Container</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Root<wbr>View<wbr>Container<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.addRootViewContainer</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L153">renderer-pixi/src/Scene2D/index.tsx:153</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="canvasDragImpl" class="tsd-anchor"></a>
+					<h3>canvas<wbr>Drag<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">canvas<wbr>Drag<wbr>Impl<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span>, type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;start&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;move&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;end&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.canvasDragImpl</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L419">renderer-pixi/src/Scene2D/index.tsx:419</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">&quot;start&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;move&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;end&quot;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="canvasScaleImpl" class="tsd-anchor"></a>
+					<h3>canvas<wbr>Scale<wbr>Impl</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">canvas<wbr>Scale<wbr>Impl<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WheelEvent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.canvasScaleImpl</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L390">renderer-pixi/src/Scene2D/index.tsx:390</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">SceneEvent</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">WheelEvent</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="componentDidMount" class="tsd-anchor"></a>
+					<h3>component<wbr>Did<wbr>Mount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.componentDidMount</p>
+								<ul>
+									<li>Defined in renderer-core/typings/scene.d.ts:163</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="componentDidUpdate" class="tsd-anchor"></a>
+					<h3>component<wbr>Did<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Did<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.componentDidUpdate</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L73">renderer-pixi/src/Scene2D/index.tsx:73</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="componentWillMount" class="tsd-anchor"></a>
+					<h3>component<wbr>Will<wbr>Mount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Mount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.componentWillMount</p>
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:12</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="componentWillUnmount" class="tsd-anchor"></a>
+					<h3>component<wbr>Will<wbr>Unmount</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Unmount<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.componentWillUnmount</p>
+								<ul>
+									<li>Defined in renderer-core/typings/scene.d.ts:165</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="componentWillUpdate" class="tsd-anchor"></a>
+					<h3>component<wbr>Will<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">component<wbr>Will<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.componentWillUpdate</p>
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:13</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="createApp" class="tsd-anchor"></a>
+					<h3>create<wbr>App</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>App<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.createApp</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L211">renderer-pixi/src/Scene2D/index.tsx:211</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Application</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="createCoordinateController" class="tsd-anchor"></a>
+					<h3>create<wbr>Coordinate<wbr>Controller</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Coordinate<wbr>Controller<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CoordinateControllerPixi</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.createCoordinateController</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L306">renderer-pixi/src/Scene2D/index.tsx:306</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CoordinateControllerPixi</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="createView" class="tsd-anchor"></a>
+					<h3>create<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>View<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.createView</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L86">renderer-pixi/src/Scene2D/index.tsx:86</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Container</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="createViewport" class="tsd-anchor"></a>
+					<h3>create<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Viewport<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.createViewport</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L176">renderer-pixi/src/Scene2D/index.tsx:176</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="destroyApp" class="tsd-anchor"></a>
+					<h3>destroy<wbr>App</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">destroy<wbr>App<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.destroyApp</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L350">renderer-pixi/src/Scene2D/index.tsx:350</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="destroyRendererInteraction" class="tsd-anchor"></a>
+					<h3>destroy<wbr>Renderer<wbr>Interaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">destroy<wbr>Renderer<wbr>Interaction<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.destroyRendererInteraction</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L267">renderer-pixi/src/Scene2D/index.tsx:267</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>停止内置的 InteractionManager</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="fixResizeFramebufferBug" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fix<wbr>Resize<wbr>Framebuffer<wbr>Bug</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">fix<wbr>Resize<wbr>Framebuffer<wbr>Bug<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span>, resizeFramebuffer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L248">renderer-pixi/src/Scene2D/index.tsx:248</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>修复 PIXI bug，改写 resizeFramebuffer，解决 pixi frame buffer 只能由大变小但不能由小变大 resize 的问题
+									因为修复此 bug 会导致性能问题，所以只在必要的时候使用，通过参数控制改写的内容</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+								<li>
+									<h5>resizeFramebuffer: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="forceUpdate" class="tsd-anchor"></a>
+					<h3>force<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">force<wbr>Update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.forceUpdate</p>
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:10</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getCanvasView" class="tsd-anchor"></a>
+					<h3>get<wbr>Canvas<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Canvas<wbr>View<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLCanvasElement</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getCanvasView</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L277">renderer-pixi/src/Scene2D/index.tsx:277</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLCanvasElement</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getHitTargetOriginal" class="tsd-anchor"></a>
+					<h3>get<wbr>Hit<wbr>Target<wbr>Original</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Hit<wbr>Target<wbr>Original<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, configMap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InteractiveConfig</span><span class="tsd-signature-symbol">&gt;</span>, interactiveType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractiveType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>originalTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">; </span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getHitTargetOriginal</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L281">renderer-pixi/src/Scene2D/index.tsx:281</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, configMap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InteractiveConfig</span><span class="tsd-signature-symbol">&gt;</span>, interactiveType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractiveType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>originalTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">; </span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter-signature">
+									<ul class="tsd-signatures tsd-kind-type-literal">
+										<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Vec2</span>, container<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Container</span>, configMap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InteractiveConfig</span><span class="tsd-signature-symbol">&gt;</span>, interactiveType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">InteractiveType</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>originalTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">; </span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol"> }</span></li>
+									</ul>
+									<ul class="tsd-descriptions">
+										<li class="tsd-description">
+											<h4 class="tsd-parameters-title">Parameters</h4>
+											<ul class="tsd-parameters">
+												<li>
+													<h5>point: <span class="tsd-signature-type">Vec2</span></h5>
+												</li>
+												<li>
+													<h5>container: <span class="tsd-signature-type">Container</span></h5>
+												</li>
+												<li>
+													<h5>configMap: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">InteractiveConfig</span><span class="tsd-signature-symbol">&gt;</span></h5>
+												</li>
+												<li>
+													<h5>interactiveType: <span class="tsd-signature-type">InteractiveType</span></h5>
+												</li>
+											</ul>
+											<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>originalTarget<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol">; </span>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DisplayObject</span><span class="tsd-signature-symbol"> }</span></h4>
+											<ul class="tsd-parameters">
+												<li class="tsd-parameter">
+													<h5>original<wbr>Target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">DisplayObject</span></h5>
+												</li>
+												<li class="tsd-parameter">
+													<h5>target<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">DisplayObject</span></h5>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getScreenShot" class="tsd-anchor"></a>
+					<h3>get<wbr>Screen<wbr>Shot</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Screen<wbr>Shot<span class="tsd-signature-symbol">(</span>sx<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, sy<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, w<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, h<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, fileType<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, quality<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, isBase64<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getScreenShot</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L360">renderer-pixi/src/Scene2D/index.tsx:360</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>获取截图</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sx: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+								<li>
+									<h5>sy: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> w: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> h: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>fileType: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &#x27;image/png&#x27;</span></h5>
+								</li>
+								<li>
+									<h5>quality: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></h5>
+								</li>
+								<li>
+									<h5>isBase64: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Blob</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getViewInfo" class="tsd-anchor"></a>
+					<h3>get<wbr>View<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>View<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getViewInfo</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L92">renderer-pixi/src/Scene2D/index.tsx:92</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{ </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+									</ul>
+								</li>
+								<li class="tsd-parameter">
+									<h5>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getViewport" class="tsd-anchor"></a>
+					<h3>get<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Viewport<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Sprite</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getViewport</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L194">renderer-pixi/src/Scene2D/index.tsx:194</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Sprite</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getViewportInfo" class="tsd-anchor"></a>
+					<h3>get<wbr>Viewport<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Viewport<wbr>Info<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.getViewportInfo</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L198">renderer-pixi/src/Scene2D/index.tsx:198</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="initSkyBox" class="tsd-anchor"></a>
+					<h3>init<wbr>Sky<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Sky<wbr>Box<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.initSkyBox</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L329">renderer-pixi/src/Scene2D/index.tsx:329</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="removeAppChildrenView" class="tsd-anchor"></a>
+					<h3>remove<wbr>App<wbr>Children<wbr>View</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>App<wbr>Children<wbr>View<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.removeAppChildrenView</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L355">renderer-pixi/src/Scene2D/index.tsx:355</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="render" class="tsd-anchor"></a>
+					<h3>render</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">render<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.render</p>
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:14</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Element</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="resizeStage" class="tsd-anchor"></a>
+					<h3>resize<wbr>Stage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">resize<wbr>Stage<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.resizeStage</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L310">renderer-pixi/src/Scene2D/index.tsx:310</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="resizeViewport" class="tsd-anchor"></a>
+					<h3>resize<wbr>Viewport</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">resize<wbr>Viewport<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.resizeViewport</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L342">renderer-pixi/src/Scene2D/index.tsx:342</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setBackGroundImage" class="tsd-anchor"></a>
+					<h3>set<wbr>Back<wbr>Ground<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Back<wbr>Ground<wbr>Image<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setBackGroundImage</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L317">renderer-pixi/src/Scene2D/index.tsx:317</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewPosition" class="tsd-anchor"></a>
+					<h3>set<wbr>View<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>View<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewPosition</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L100">renderer-pixi/src/Scene2D/index.tsx:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewScale" class="tsd-anchor"></a>
+					<h3>set<wbr>View<wbr>Scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>View<wbr>Scale<span class="tsd-signature-symbol">(</span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewScale</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L109">renderer-pixi/src/Scene2D/index.tsx:109</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scale: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewVisible" class="tsd-anchor"></a>
+					<h3>set<wbr>View<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>View<wbr>Visible<span class="tsd-signature-symbol">(</span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewVisible</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L118">renderer-pixi/src/Scene2D/index.tsx:118</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>visible: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewportPosition" class="tsd-anchor"></a>
+					<h3>set<wbr>Viewport<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Viewport<wbr>Position<span class="tsd-signature-symbol">(</span>position<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewportPosition</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L122">renderer-pixi/src/Scene2D/index.tsx:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>position: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewportScale" class="tsd-anchor"></a>
+					<h3>set<wbr>Viewport<wbr>Scale</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Viewport<wbr>Scale<span class="tsd-signature-symbol">(</span>scale<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewportScale</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L134">renderer-pixi/src/Scene2D/index.tsx:134</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>scale: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Vec3</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="setViewportVisible" class="tsd-anchor"></a>
+					<h3>set<wbr>Viewport<wbr>Visible</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Viewport<wbr>Visible<span class="tsd-signature-symbol">(</span>visible<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.setViewportVisible</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L146">renderer-pixi/src/Scene2D/index.tsx:146</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>visible: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="shouldComponentUpdate" class="tsd-anchor"></a>
+					<h3>should<wbr>Component<wbr>Update</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">should<wbr>Component<wbr>Update<span class="tsd-signature-symbol">(</span>nextProps<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from BaseScene.shouldComponentUpdate</p>
+								<ul>
+									<li>Defined in renderer-core/typings/component.d.ts:11</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> nextProps: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">BaseSceneProps</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateCameraPosition" class="tsd-anchor"></a>
+					<h3>update<wbr>Camera<wbr>Position</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Camera<wbr>Position<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.updateCameraPosition</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L240">renderer-pixi/src/Scene2D/index.tsx:240</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateCameraTarget" class="tsd-anchor"></a>
+					<h3>update<wbr>Camera<wbr>Target</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Camera<wbr>Target<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.updateCameraTarget</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L236">renderer-pixi/src/Scene2D/index.tsx:236</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateCursor" class="tsd-anchor"></a>
+					<h3>update<wbr>Cursor</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Cursor<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span>, cursor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.updateCursor</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L302">renderer-pixi/src/Scene2D/index.tsx:302</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+								<li>
+									<h5>cursor: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="updateResolution" class="tsd-anchor"></a>
+					<h3>update<wbr>Resolution</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Resolution<span class="tsd-signature-symbol">(</span>app<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Application</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides BaseScene.updateResolution</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/turbox3d/turbox/blob/b505391/packages/renderer-pixi/src/Scene2D/index.tsx#L333">renderer-pixi/src/Scene2D/index.tsx:333</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>app: <span class="tsd-signature-type">Application</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Modules</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/command_manager_src.html">command-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/design_engine_src.html">design-<wbr>engine/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/event_manager_src.html">event-<wbr>manager/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_pixi_src.html">graphic-<wbr>component-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/graphic_component_three_src.html">graphic-<wbr>component-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/math_src.html">math/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reactivity_react_src.html">reactivity-<wbr>react/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/reactivity_src.html">reactivity/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_core_src.html">renderer-<wbr>core/src</a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/renderer_pixi_src.html">renderer-<wbr>pixi/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/renderer_three_src.html">renderer-<wbr>three/src</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="../modules/shared_src.html">shared/src</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="renderer_pixi_src.Mesh2D.html" class="tsd-kind-icon">Mesh2D</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="renderer_pixi_src.Scene2D.html" class="tsd-kind-icon">Scene2D</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#_vNode" class="tsd-kind-icon">_v<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#backgroundImage" class="tsd-kind-icon">background<wbr>Image</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="renderer_pixi_src.Scene2D.html#brt" class="tsd-kind-icon">brt</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#camera" class="tsd-kind-icon">camera</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#coordinate" class="tsd-kind-icon">coordinate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#defaultSceneViewType" class="tsd-kind-icon">default<wbr>Scene<wbr>View<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#getCurrentApp" class="tsd-kind-icon">get<wbr>Current<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#getCurrentInteractiveController" class="tsd-kind-icon">get<wbr>Current<wbr>Interactive<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#height" class="tsd-kind-icon">height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#maxFPS" class="tsd-kind-icon">maxFPS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#mountTimer" class="tsd-kind-icon">mount<wbr>Timer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="renderer_pixi_src.Scene2D.html#offsetCenter" class="tsd-kind-icon">offset<wbr>Center</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onClick" class="tsd-kind-icon">on<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onDBClick" class="tsd-kind-icon">onDBClick</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onDragEnd" class="tsd-kind-icon">on<wbr>Drag<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onDragMove" class="tsd-kind-icon">on<wbr>Drag<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onDragStart" class="tsd-kind-icon">on<wbr>Drag<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPinch" class="tsd-kind-icon">on<wbr>Pinch</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPinchEnd" class="tsd-kind-icon">on<wbr>Pinch<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPinchStart" class="tsd-kind-icon">on<wbr>Pinch<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPointerMove" class="tsd-kind-icon">on<wbr>Pointer<wbr>Move</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPointerUp" class="tsd-kind-icon">on<wbr>Pointer<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPress" class="tsd-kind-icon">on<wbr>Press</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onPressUp" class="tsd-kind-icon">on<wbr>Press<wbr>Up</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onRightClick" class="tsd-kind-icon">on<wbr>Right<wbr>Click</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onRotate" class="tsd-kind-icon">on<wbr>Rotate</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onRotateEnd" class="tsd-kind-icon">on<wbr>Rotate<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onRotateStart" class="tsd-kind-icon">on<wbr>Rotate<wbr>Start</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#onWheel" class="tsd-kind-icon">on<wbr>Wheel</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="renderer_pixi_src.Scene2D.html#originalResizeFramebufferFunction" class="tsd-kind-icon">original<wbr>Resize<wbr>Framebuffer<wbr>Function</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#props" class="tsd-kind-icon">props</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#raycaster" class="tsd-kind-icon">raycaster</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#renderFlag" class="tsd-kind-icon">render<wbr>Flag</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#resolution" class="tsd-kind-icon">resolution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="renderer_pixi_src.Scene2D.html#rt" class="tsd-kind-icon">rt</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#scene" class="tsd-kind-icon">scene</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#sceneContext" class="tsd-kind-icon">scene<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#sceneType" class="tsd-kind-icon">scene<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#view" class="tsd-kind-icon">view</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#viewport" class="tsd-kind-icon">viewport</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#width" class="tsd-kind-icon">width</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#BACKGROUND_COLOR" class="tsd-kind-icon">BACKGROUND_<wbr>COLOR</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#DEFAULT_HEIGHT" class="tsd-kind-icon">DEFAULT_<wbr>HEIGHT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#DEFAULT_WIDTH" class="tsd-kind-icon">DEFAULT_<wbr>WIDTH</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#SCALE_BIGGER" class="tsd-kind-icon">SCALE_<wbr>BIGGER</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#SCALE_SMALLER" class="tsd-kind-icon">SCALE_<wbr>SMALLER</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#TRANSPARENT" class="tsd-kind-icon">TRANSPARENT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#appMap" class="tsd-kind-icon">app<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#appMountedStatus" class="tsd-kind-icon">app<wbr>Mounted<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="renderer_pixi_src.Scene2D.html#interactiveMap" class="tsd-kind-icon">interactive<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="renderer_pixi_src.Scene2D.html#context" class="tsd-kind-icon">context</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#addChildView" class="tsd-kind-icon">add<wbr>Child<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#addRootViewContainer" class="tsd-kind-icon">add<wbr>Root<wbr>View<wbr>Container</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#canvasDragImpl" class="tsd-kind-icon">canvas<wbr>Drag<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#canvasScaleImpl" class="tsd-kind-icon">canvas<wbr>Scale<wbr>Impl</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#componentDidMount" class="tsd-kind-icon">component<wbr>Did<wbr>Mount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#componentDidUpdate" class="tsd-kind-icon">component<wbr>Did<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#componentWillMount" class="tsd-kind-icon">component<wbr>Will<wbr>Mount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#componentWillUnmount" class="tsd-kind-icon">component<wbr>Will<wbr>Unmount</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#componentWillUpdate" class="tsd-kind-icon">component<wbr>Will<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#createApp" class="tsd-kind-icon">create<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#createCoordinateController" class="tsd-kind-icon">create<wbr>Coordinate<wbr>Controller</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#createView" class="tsd-kind-icon">create<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#createViewport" class="tsd-kind-icon">create<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#destroyApp" class="tsd-kind-icon">destroy<wbr>App</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#destroyRendererInteraction" class="tsd-kind-icon">destroy<wbr>Renderer<wbr>Interaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="renderer_pixi_src.Scene2D.html#fixResizeFramebufferBug" class="tsd-kind-icon">fix<wbr>Resize<wbr>Framebuffer<wbr>Bug</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#forceUpdate" class="tsd-kind-icon">force<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getCanvasView" class="tsd-kind-icon">get<wbr>Canvas<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getHitTargetOriginal" class="tsd-kind-icon">get<wbr>Hit<wbr>Target<wbr>Original</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getScreenShot" class="tsd-kind-icon">get<wbr>Screen<wbr>Shot</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getViewInfo" class="tsd-kind-icon">get<wbr>View<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getViewport" class="tsd-kind-icon">get<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#getViewportInfo" class="tsd-kind-icon">get<wbr>Viewport<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#initSkyBox" class="tsd-kind-icon">init<wbr>Sky<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#removeAppChildrenView" class="tsd-kind-icon">remove<wbr>App<wbr>Children<wbr>View</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#render" class="tsd-kind-icon">render</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#resizeStage" class="tsd-kind-icon">resize<wbr>Stage</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#resizeViewport" class="tsd-kind-icon">resize<wbr>Viewport</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setBackGroundImage" class="tsd-kind-icon">set<wbr>Back<wbr>Ground<wbr>Image</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewPosition" class="tsd-kind-icon">set<wbr>View<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewScale" class="tsd-kind-icon">set<wbr>View<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewVisible" class="tsd-kind-icon">set<wbr>View<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewportPosition" class="tsd-kind-icon">set<wbr>Viewport<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewportScale" class="tsd-kind-icon">set<wbr>Viewport<wbr>Scale</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#setViewportVisible" class="tsd-kind-icon">set<wbr>Viewport<wbr>Visible</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="renderer_pixi_src.Scene2D.html#shouldComponentUpdate" class="tsd-kind-icon">should<wbr>Component<wbr>Update</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#updateCameraPosition" class="tsd-kind-icon">update<wbr>Camera<wbr>Position</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#updateCameraTarget" class="tsd-kind-icon">update<wbr>Camera<wbr>Target</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#updateCursor" class="tsd-kind-icon">update<wbr>Cursor</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="renderer_pixi_src.Scene2D.html#updateResolution" class="tsd-kind-icon">update<wbr>Resolution</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module tsd-has-type-parameter">
+						<a href="renderer_pixi_src.ViewEntity2D.html" class="tsd-kind-icon">View<wbr>Entity2D</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/renderer_pixi_src.html#Scene2DSymbol" class="tsd-kind-icon">Scene2DSymbol</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
